@@ -1,0 +1,48 @@
+@import "../utils/variables";
+@import "../components/generals";
+
+.what-we-do-section {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 94px;
+    &__title {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+}
+.what-we-do-container {
+    display: flex;
+    flex-direction: column;
+    & .container {
+        width: 1200px;
+    }
+}
+.work-grid {
+    display: flex;
+    gap: 30px;
+    justify-content: space-around;
+    & .unstyled-list {
+        list-style: none;
+    }
+    &__description {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 370px;
+        height: 70px;
+        background: rgba(47, 48, 58, 0.8);
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16px;
+        text-align: center;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: #ffffff;
+        position: absolute;
+        bottom: 4px;
+    }
+    &__item {
+        position: relative;
+    }
+}

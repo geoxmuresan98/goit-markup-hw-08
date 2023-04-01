@@ -1,0 +1,55 @@
+@import "../utils/variables";
+@import "../components/generals";
+
+.regular-costumer-section {
+    display: flex;
+    justify-content: center;
+    & .section {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+    &__title {
+        padding-bottom: 50px;
+        padding-top: 64px;
+       
+    }
+}
+.regular-costumer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    & .container {
+        width: 1200px;
+    }
+}
+.costumer-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+    &__item {
+        width: 170px;
+        height: 92px;
+        border: 1px solid #afb1b8;
+        border-radius: 4px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        &__item:hover {
+            border-color: #2196f3;
+        }
+    }
+
+    &__link {
+        fill: #afb1b8;
+    }
+
+    &__svg {
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        &:hover {
+            fill: #2196f3;
+        }
+    }
+}
