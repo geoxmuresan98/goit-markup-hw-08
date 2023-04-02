@@ -1,5 +1,4 @@
 @import "../utils/variables";
-@import "../components/generals";
 
 .efective-section {
     height: 600px;
@@ -11,7 +10,7 @@
             rgba(47, 48, 58, 0.1)
         ),
         linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.1)),
-        url(..//images/underapic.jpeg);
+        url(..//images/Background-M-480.png);
     background-repeat: no-repeat;
     display: flex;
     justify-content: center;
@@ -46,4 +45,87 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+@media screen and (min-width: 768px) {
+    .efective-section {
+        background-image: linear-gradient(
+                to bottom,
+                rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.1)
+            ),
+            linear-gradient(
+                to right,
+                rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.1)
+            ),
+            url(..//images/Background-T-768.png);
+    }
+}
+@media screen and (min-width: 1200px) {
+    .efective-section {
+        background-image: linear-gradient(
+                to bottom,
+                rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.1)
+            ),
+            linear-gradient(
+                to right,
+                rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.1)
+            ),
+            url(..//images/Background-D-1600.png);
+    }
+}
+@media screen and (min-device-pixel-radio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .efective-section {
+        background-image: linear-gradient(
+                to bottom,
+                rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.1)
+            ),
+            linear-gradient(
+                to right,
+                rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.1)
+            ),
+            url(..//images/Background-M-480-@2x.png);
+    }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-radio: 2),
+    screen and (min-width: 768px) and (min-resolution: 192dpi),
+    screen and (min-width: 768px) and (min-resolution: 2dppx) {
+    .efective-section {
+        background-image: linear-gradient(
+                to bottom,
+                rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.1)
+            ),
+            linear-gradient(
+                to right,
+                rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.1)
+            ),
+            url(..//images/Background-T-768-@2x.png);
+    }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
+    screen and (min-width: 1200px) and (min-resolution: 192dpi),
+    screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+    .efective-section {
+        background-image: linear-gradient(
+                to bottom,
+                rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.1)
+            ),
+            linear-gradient(
+                to right,
+                rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.1)
+            ),
+            url(..//images/Background-D-1600-@2x.png);
+    }
+}
+@media screen {
 }

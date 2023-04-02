@@ -1,5 +1,4 @@
 @import "../utils/variables";
-@import "../components/generals";
 
 .what-we-do-section {
     display: flex;
@@ -44,5 +43,10 @@
     }
     &__item {
         position: relative;
+    }
+}
+@media screen and (max-width: 1199px) {
+    .what-we-do-section {
+        display: none;
     }
 }

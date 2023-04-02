@@ -12,8 +12,10 @@
       rel="stylesheet"/>
     <link rel="stylesheet" href="./css/styles.css"/>
     <link rel="stylesheet" href="/sass/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body class="body">
+
 <!--ModalSection-->
     <div class="modal-section is-hidden" data-modal>
       <div class="modal-container">
@@ -21,7 +23,7 @@
           <use href="./Images/icon.svg.svg#icon-cross"></use>
       </svg></button>
 
-      <form class="modal-form" name="costumer-info" autocomplete="on">
+      <form class="modal-form" name="customer-info" autocomplete="on">
         <h3 class="modal-form__title">Leave your information and we'll call you back</h3>
         <div class="label-container">
           <label class="label">Name<input class="label__input" type="text" name="user name"><svg class="label__svg" width="12"
@@ -53,7 +55,8 @@
             </svg></span>I agree with the letter and accept the<a class="checkbox__terms-style" href="#">Terms and Conditions</a></label>
             
             <div class="modal-button">
-              <button class="modal-button__style" type="submit">Send</button></div>
+              <button class="modal-button__style" type="submit">Send</button>
+            </div>
 
       </form>
 
@@ -63,7 +66,7 @@
     <header class="header-section">
       <div class="header-container container">
         <a class="logo" href="WebStudio"><span class="first__style">Web</span>Studio</a>
-        <nav class="navigation-block">
+        <nav class="navigation-block menu">
           <ul class="navigation-block__grid unstyled-list">
             <li class="navigation-block__bottom-border" ><a class="navigation-block__link-style" href="/index.html">Studio</a></li>
             <li><a class="navigation-block__link-style" href="./Portofolio.html">Portofolio</a></li>
@@ -81,10 +84,20 @@
             </li>
           </ul>
         </nav>
+
+        <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+          <svg width="24" height="24" fill="currentColor" viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd"
+                  d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                  clip-rule="evenodd"></path>
+          </svg>
+      </button>
       </div>
     </header>
 
     <main>
+      <!--Efective Section-->
       <section class="efective-section">
         <div class="efective-container container">
           <h1 class="efective-section__title">
@@ -172,13 +185,21 @@
           </ul>
         </div>
       </section>
-
+      <!--Our team Section-->
       <section class="our-team-section section">
         <div class="our-team-container container">
           <h2 class="our-team-section__title">Our Team</h2>
           <ul class="team unstyled-list">
             <li class="team__item">
-                <img class="team__image" width="270px" height="260px"src="Images/img11.jpg"alt="TeamMember"/>
+              <picture>
+                <source media="screen and (max-width: 480px)"
+                    srcset="images/Christopher-M.png 1x, images/Christopher-M-@2x.png 2x">
+                <source media="screen and (min-width: 768px)"
+                    srcset="images/Christopher-T.png 1x, images/Christopher-T-@2x.png 2x">
+                <source media="screen and (min-width: 1200px)"
+                    srcset="images/Christopher-D.png 1x, images/Christopher-D-@2x.png 2x">
+                <img class=" team__image" src="Images/Christopher-M.png" alt="Christopher">
+            </picture>
                 <h3 class="team__name">Christopher Walker</h3>
                 <p class="team__occupation">Product Designer</p>
                 <div class="our-team-vectorial">
@@ -455,5 +476,6 @@
       </div>
     </footer>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

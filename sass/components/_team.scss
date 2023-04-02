@@ -1,5 +1,4 @@
 @import "../utils/variables";
-@import "../components/generals";
 
 .our-team-section {
     display: flex;
@@ -26,11 +25,12 @@
     display: flex;
     gap: 30px;
     justify-content: space-around;
+    flex-wrap: wrap;
     & .unstyled-list {
         list-style: none;
     }
     &__item {
-        width: 270px;
+        width: 450px;
         left: 515px;
         top: 1785px;
         background: #ffffff;
@@ -78,5 +78,26 @@
             justify-content: center;
             align-items: center;
         }
+    }
+}
+@media screen and (min-width: 768px) {
+    .team__item {
+        width: 354px;
+    }
+    .team {
+        flex-wrap: wrap;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .team__item {
+        width: 270px;
+    }
+    .team {
+        flex-wrap: wrap;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .team__image {
+        width: 270px;
     }
 }
