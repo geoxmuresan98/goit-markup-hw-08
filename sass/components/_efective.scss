@@ -10,7 +10,7 @@
             rgba(47, 48, 58, 0.1)
         ),
         linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.1)),
-        url(../);
+        url(..//Images/background-M-480.png);
     background-repeat: no-repeat;
     display: flex;
     justify-content: center;
@@ -58,7 +58,7 @@
                 rgba(47, 48, 58, 0.4),
                 rgba(47, 48, 58, 0.1)
             ),
-            url(..//Images/Background-T-768.png);
+            url(..//Images/background-T-768.png);
     }
 }
 @media screen and (min-width: 1200px) {
@@ -73,7 +73,7 @@
                 rgba(47, 48, 58, 0.4),
                 rgba(47, 48, 58, 0.1)
             ),
-            url(..//Images/Background-D-1600.png);
+            url(..//Images/background-D-1600.png);
     }
 }
 @media screen and (min-device-pixel-radio: 2),
@@ -90,7 +90,7 @@
                 rgba(47, 48, 58, 0.4),
                 rgba(47, 48, 58, 0.1)
             ),
-            url(..//Images/Background-M-480-@2x.png);
+            url(..//Images/background-M-480-@2x.png);
     }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-radio: 2),
@@ -107,7 +107,7 @@
                 rgba(47, 48, 58, 0.4),
                 rgba(47, 48, 58, 0.1)
             ),
-            url(..//Images/Background-T-768-@2x.png);
+            url(..//Images/background-T-768-@2x.png);
     }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
@@ -124,7 +124,7 @@
                 rgba(47, 48, 58, 0.4),
                 rgba(47, 48, 58, 0.1)
             ),
-            url(..//Images/Background-D-1600-@2x.png);
+            url(..//Images/background-D-1600-@2x.png);
     }
 }
 @media screen {
